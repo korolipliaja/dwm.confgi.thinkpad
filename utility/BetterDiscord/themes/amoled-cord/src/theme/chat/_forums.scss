@@ -1,0 +1,37 @@
+#app-mount .chat-2ZfjoI {
+    .container-3wLKDe {
+        background-color: var(--background-primary);
+        .mainCard-3KBsBI, .container-2nXUah, .container-3arpDl {
+            background-color: var(--background-tertiary);
+        }
+        .loadingCard-3pIp9h {
+            background-color: var(--background-tertiary);
+        }
+        .container-1PloNW {
+            &:hover {
+                background-color: var(--background-modifier-hover);
+            }
+            &:active {
+                background-color: var(--background-modifier-active);
+            }
+            &.isOpen-O7ANQc {
+                background-color: var(--background-modifier-selected);
+            }
+            .textContentFooter-2JnNv8 {
+                background: transparent;
+            }
+        }
+        .container-q2_DnH {
+            background-color: var(--background-tertiary);
+            &:active {
+                background-color: var(--background-modifier-active);
+            }
+            &.isOpen-2Gyel_ {
+                background-color: var(--background-modifier-selected);
+            }
+        }
+        .container-2_J666 {
+            background-color: var(--background-tertiary);
+        }
+    }
+}

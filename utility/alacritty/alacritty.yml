@@ -1,0 +1,71 @@
+# Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
+# Copyright (c) 2017-present Sven Greb <code@svengreb.de>
+
+# Project:    Nord Alacritty
+# Version:    0.1.0
+# Repository: https://github.com/arcticicestudio/nord-alacritty
+# License:    MIT
+# References:
+#   https://github.com/alacritty/alacritty
+
+
+# Colors (Base16 Default Dark)
+colors:
+  # Default colors
+  primary:
+    background: '#111111'
+    foreground: '0xd8d8d8'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x181818'
+    cursor: '0xd8d8d8'
+
+  # Normal colors
+  normal:
+    black:   '0x181818'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0xd8d8d8'
+
+  # Bright colors
+  bright:
+    black:   '0x585858'
+    red:     '0xab4642'
+    green:   '0xa1b56c'
+    yellow:  '0xf7ca88'
+    blue:    '0x7cafc2'
+    magenta: '0xba8baf'
+    cyan:    '0x86c1b9'
+    white:   '0x818181' 
+
+font:
+  normal:
+    family: JetBrainsMono 
+    style: Mono
+  bold:
+    family:  JetBrainsMono 
+    style: Mono
+  italic:
+    family: JetBrainsMono 
+    style: Mono
+  bold_italic:
+    family: JetBrainsMono
+    style: Mono
+  size: 15
+
+window:
+  dimensions:
+    columns: 80
+    lines: 30
+  opacity: 1 
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+

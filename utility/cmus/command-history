@@ -1,0 +1,48 @@
+shell 
+live-filter 
+live-filter minec
+add /mnt/hdd1/music/
+live-filter
+clear
+bind -f common x player-play
+live-filter mafia
+live-filter stu
+live-filter gaga
+live-filter mafi
+live-filter моне
+live-filter kry
+live-filter б
+set color_win_cur=gray
+set color_win_title_fg=white
+set color_win_title_fg=gray
+set color_win_cur_sel_bg=gray
+set color_win_cur_sel_bg=white
+live-filter stud
+live-filter isla
+live-filter this
+live-filter born
+live-filter лю
+set follow=true
+live-filte
+live-filter sdf
+live-filter lana
+filter Lana
+filter this
+filter Gam
+filter game
+set color_statusline_fg=gray
+set color_statusline_fg=cyan
+set color_cmdline_fg=gray
+set color_cmdline_fg=cyan
+set color_titleline_fg=gray
+set color_cmdline_fg=white
+set color_win_sel_fg=black
+set color_win_sel_bg=gray
+set color_win_sel_bg=cyan
+set color_win_sel_bg=white
+set color_win_inactive_cur_sel_fg=white
+set color_win_dir=white
+set color_win_cur=white
+set color_titleline_fg=white
+set color_info=white
+add /home/kpliaja/music/
