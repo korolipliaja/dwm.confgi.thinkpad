@@ -40,6 +40,11 @@ get_layout(char *syms, int grp_num)
 		layout = tok;
 		grp++;
 	}
+ size_t len = strlen(layout);
+ size_t i=0;
+ for(;i<len;i++)
+ layout[i] += 'A' -'a';
+ return layout;
 
 	return layout;
 }
@@ -84,3 +89,5 @@ end:
 
 	return layout;
 }
+
+

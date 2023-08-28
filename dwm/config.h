@@ -123,7 +123,7 @@ static const Key keys[] = {
         TAGKEYS(                        XK_8,                      4)
 	TAGKEYS(                        XK_9,                      5)
         TAGKEYS(                        XK_0,                      6)
-	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_e,      quit,           {0} },
 	{ 0,                             0x1008ff13,  spawn,          {.v=volp } }, /* прибавить громкость */
         { 0,                             0x1008ff11,  spawn,          {.v=volm } }, /* убавить громкость */
         { 0,                             0x1008ff12,   spawn,          {.v=vols } }, /* mуte */

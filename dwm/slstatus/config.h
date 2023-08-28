@@ -1,10 +1,12 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 10;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
+
+
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,8 +67,10 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ battery_perc, "[b %s%%]", "BAT0" },
+	{ battery_perc, "[B %s%%]", "BAT0" },
         { run_command," [%s] ", "pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}' | head -1"},
-        { keymap,   "[%s] ",           NULL    },
+	{ keymap,               "[%s] ",     "NULL"},
 	{ datetime, "[%s]" ,           "%d.%m %R" },
 };
+
+
