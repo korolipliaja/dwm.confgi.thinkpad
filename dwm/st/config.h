@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "JetBrainsMono:pixelsize=20:antialias=true:autohint=true";
+static int borderpx = 15;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -96,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
+        "#181818",
+	"#AB4642",
+	"#a1b56c",
+	"#f7ca88",
+	"#7cafc2",
+	"#ba8baf",
+	"#86c1b9",
+	"#d8d8d8",	
+	
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
+	"#D8D8D8",
+	"#AB4642",
+	"#a1b56c",
+	"#f7ca88",
 	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#ba8baf",
+	"#86c1b9",
+	"#818181",
 
 	[255] = 0,
 
@@ -201,6 +201,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*

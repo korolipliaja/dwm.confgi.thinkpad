@@ -83,6 +83,7 @@ static const char *vols[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggl
 static const char *firefox[] =   { "firefox", NULL };
 static const char *telegram[] =  { "flatpak", "run", "org.telegram.desktop", NULL };
 static const char *nemo[] =      { "nemo", NULL };
+
 static const char *Discord[] = { "Discord", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
 static const char *flameshotcb[] = { "flameshot", "full", "--clipboard", NULL };
@@ -133,6 +134,7 @@ static const Key keys[] = {
 	{ ALTKEY,             		XK_t,    spawn,          {.v = telegram } }, /* запуск telegram */
 	{ ALTKEY,             		XK_c,    spawn,          {.v = firefox } }, /* запуск firefox */
 	{ ALTKEY,             		XK_p,    spawn,          {.v = Discord } }, /* запуск discord */
+
 
 	
 
