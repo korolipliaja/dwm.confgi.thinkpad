@@ -37,12 +37,19 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 " Unmanaged plugin (manually installed and updated)
 Plug '~/my-prototype-plugin'
 		
+Plug 'https://github.com/alexanderbluhm/black.nvim.git' 
+Plug 'https://github.com/ap/vim-css-color.git'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
-Plug 'projekt0n/github-nvim-theme'
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
 " You can revert the settings after the call like so:
-colorscheme github_dark_high_contrast
+colorscheme black 
 "   filetype indent off   " Disable file-type-specific indentation
-"   syntax off            " Disable syntax highlighting
+   syntax on   
+   set number 
+   set relativenumber 
+
+   source $HOME/.config/nvim/themes/airline.vim

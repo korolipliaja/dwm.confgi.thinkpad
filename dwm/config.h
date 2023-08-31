@@ -75,14 +75,16 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 
 static const char *mic[] = { "amixer", "set","Capture", "toggle", NULL };
-static const char *brightnessup[] = { "light", "-A","20", NULL };
-static const char *brightnessdown[] = { "light", "-U", "20", NULL };
-static const char *volm[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-10%", NULL };
-static const char *volp[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+10%", NULL };
+static const char *brightnessup[] = { "light", "-A","10", NULL };
+static const char *brightnessdown[] = { "light", "-U", "10", NULL };
+static const char *volm[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-20%", NULL };
+static const char *volp[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+20%", NULL };
 static const char *vols[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
 static const char *firefox[] =   { "firefox", NULL };
 static const char *telegram[] =  { "flatpak", "run", "org.telegram.desktop", NULL };
 static const char *nemo[] =      { "nemo", NULL };
+static const char *red[] =      { "redshift", "-O", "5600",  NULL };
+
 
 static const char *Discord[] = { "Discord", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
@@ -134,6 +136,8 @@ static const Key keys[] = {
 	{ ALTKEY,             		XK_t,    spawn,          {.v = telegram } }, /* запуск telegram */
 	{ ALTKEY,             		XK_c,    spawn,          {.v = firefox } }, /* запуск firefox */
 	{ ALTKEY,             		XK_p,    spawn,          {.v = Discord } }, /* запуск discord */
+        { ControlMask|ShiftMask,            		XK_u,    spawn,          {.v = red } }, 
+
 
 
 	
