@@ -46,7 +46,8 @@ Plug 'vim-airline/vim-airline-themes'
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
 " You can revert the settings after the call like so:
-colorscheme black 
+colorscheme black
+
 "   filetype indent off   " Disable file-type-specific indentation
    syntax on   
    set number 
