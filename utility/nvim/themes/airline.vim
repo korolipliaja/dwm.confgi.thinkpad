@@ -8,7 +8,7 @@ let g:airline#extens#tabline#right_sep = ''
 let g:airline_section_x=''
 let g:airline_section_y=''
 let g:airline#extensions#whitespace#enabled = 0 
- let g:airline_theme='base16_twilight'
+let g:airline_theme='base16_black_metal'
 
 
 

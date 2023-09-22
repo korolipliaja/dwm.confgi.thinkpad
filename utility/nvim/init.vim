@@ -35,7 +35,9 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
 		
+Plug 'https://github.com/alexanderbluhm/black.nvim.git' 
 Plug 'https://github.com/ap/vim-css-color.git'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -44,6 +46,7 @@ Plug 'vim-airline/vim-airline-themes'
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
 " You can revert the settings after the call like so:
+colorscheme black
 
 "   filetype indent off   " Disable file-type-specific indentation
    syntax on   
@@ -51,3 +54,4 @@ call plug#end()
    set relativenumber 
 
    source $HOME/.config/nvim/themes/airline.vim
+   set clipboard+=unnamedplus
