@@ -81,7 +81,6 @@ static const char *vols[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggl
 static const char *firefox[] =   { "firefox", NULL };
 static const char *telegram[] =  { "telegram-desktop", NULL };
 static const char *nemo[] =      { "nemo", NULL };
-static const char *red[] =      { "redshift", "-O", "5600",  NULL };
 static const char *suspend[] =      { "systemctl", "suspend", NULL };
 static const char *pmosmonn[] =      { "xrandr", "--output", "eDP", "--off", "--output", "HDMI-A-0", "--mode", "1920x1080", NULL };
 static const char *pmosmonn2[] =      { "xrandr", "--output", "eDP", "--mode", "1920x1080", "--output", "HDMI-A-0", "--mode", "1920x1080", NULL };
@@ -89,7 +88,7 @@ static const char *pmosmonn3[] =      { "xrandr", "--output", "HDMI-A-0", "--mod
 static const char *Discord[] = { "Discord", NULL };
 static const char *flameshot[] = { "flameshot", "gui", NULL };
 static const char *flameshotcb[] = { "flameshot", "full", "--clipboard", NULL };
-
+static const char *monitor[] = { "xset", "dpms", "force", "off", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
         { 0, 0x1008ff02, spawn, {.v = brightnessup} },
@@ -137,8 +136,8 @@ static const Key keys[] = {
 	{ ALTKEY,             		XK_t,    spawn,          {.v = telegram } }, /* запуск telegram */
 	{ ALTKEY,             		XK_c,    spawn,          {.v = firefox } }, /* запуск firefox */
 	{ ALTKEY,             		XK_p,    spawn,          {.v = Discord } }, /* запуск discord */
-        { ControlMask|ShiftMask,            		XK_u,    spawn,          {.v = red } }, 
         { MODKEY|ShiftMask,            		XK_s,    spawn,          {.v = suspend } },/* sleep mode */
+        { MODKEY|ShiftMask,            		XK_d,    spawn,          {.v = monitor } },/* sleep mode */
 
 
 
